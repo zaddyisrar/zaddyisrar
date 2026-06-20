@@ -5,16 +5,31 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MotionReveal from "@/components/MotionReveal";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#030407] text-white">
+    <main className="min-h-screen bg-[#030407] text-white">
       <Navbar />
+
       <Hero />
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
+
+      <MotionReveal>
+        <Skills />
+      </MotionReveal>
+
+      <MotionReveal>
+        <Projects />
+      </MotionReveal>
+
+      <MotionReveal>
+        <About />
+      </MotionReveal>
+
+      <MotionReveal>
+        <Contact />
+      </MotionReveal>
+
       <Footer />
     </main>
   );

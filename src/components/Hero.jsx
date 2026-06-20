@@ -8,7 +8,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0">
         <Image
-          src="/visuals/blackhole/blackhole-final.png"
+          src="/visuals/blackhole/blackholee-final.png"
           alt="Cosmic black hole"
           fill
           priority
