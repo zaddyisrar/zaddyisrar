@@ -7,11 +7,31 @@ export const navLinks = [
 ];
 
 export const skills = [
-  "Social Media Marketing",
-  "Generative AI Development",
-  "High-End Web Development",
-  "Writer / Comics",
-  "AWS Deployment",
+  {
+    title: "Social Media Marketing",
+    desc: "Strategy. Growth. Impact.",
+    icon: "✦",
+  },
+  {
+    title: "Generative AI Development",
+    desc: "Automation. Intelligence. Systems.",
+    icon: "⌘",
+  },
+  {
+    title: "High-End Web Development",
+    desc: "Pixel Perfect. Scalable. Modern.",
+    icon: "</>",
+  },
+  {
+    title: "Writer / Comics",
+    desc: "Worlds. Stories. Visuals.",
+    icon: "✎",
+  },
+  {
+    title: "AWS Deployment",
+    desc: "Scalable. Secure. Global.",
+    icon: "☁",
+  },
 ];
 
 export const projects = [

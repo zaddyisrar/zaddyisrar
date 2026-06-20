@@ -4,41 +4,50 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen overflow-hidden border-t border-white/10 px-6 py-32"
+      className="relative min-h-screen overflow-hidden border-t border-white/10 bg-[#030407] px-6 py-32"
     >
       <div className="absolute inset-0">
         <Image
           src="/visuals/portal/portal-final.png"
           alt="Cosmic Portal"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center opacity-100"
         />
       </div>
 
-      <div className="absolute inset-0 bg-black/45" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#030407] via-[#030407]/50 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#030407] via-transparent to-[#030407]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#030407]/75 via-[#030407]/15 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#030407]/80 via-transparent to-[#030407]/90" />
 
-      <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-7xl items-center">
-        <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.35em] text-cyan-200/60">
+      <div className="relative z-10 mx-auto flex min-h-[72vh] max-w-[1600px] items-center">
+        <div className="max-w-[850px]">
+          <p className="mb-6 text-[12px] font-bold uppercase tracking-[0.34em] text-cyan-300">
             Contact
           </p>
 
-          <h2 className="mt-8 text-5xl font-black uppercase leading-none tracking-[-0.07em] text-white md:text-8xl">
-            Let’s build something epic.
+          <h2 className="font-black uppercase leading-[0.8] tracking-[0.04em]">
+            <span className="block text-[54px] font-light text-white sm:text-[78px] md:text-[92px]">
+              Let&apos;s Build
+            </span>
+
+            <span className="block text-[54px] font-light text-white sm:text-[78px] md:text-[92px]">
+              Something
+            </span>
+
+            <span className="block text-[52px] font-light text-cyan-300 sm:text-[74px] md:text-[88px]">
+              Epic.
+            </span>
           </h2>
 
-          <p className="mt-8 max-w-xl text-base leading-8 text-white/60 md:text-lg">
-            Available for high-end websites, social media systems, AI automation,
-            writing projects and digital deployment work.
+          <p className="mt-8 max-w-xl text-[16px] leading-8 text-white/70">
+            Available for high-end websites, social media systems,
+            AI automation, creative projects and digital deployment work.
           </p>
 
-          <p className="mt-8 text-xs uppercase tracking-[0.3em] text-white/35">
+          <p className="mt-8 text-[11px] uppercase tracking-[0.3em] text-white/35">
             ZADDYISRAR.COM
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="mailto:hello@zaddyisrar.com"
               className="rounded-full bg-cyan-100 px-8 py-4 text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-white"
