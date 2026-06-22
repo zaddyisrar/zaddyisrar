@@ -5,30 +5,41 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import MotionReveal from "@/components/MotionReveal";
+import ScrollSection from "@/components/motion/ScrollSection";
+import SectionBridge from "@/components/motion/SectionBridge";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#030407] text-white">
+    <main className="min-h-screen overflow-x-hidden bg-[#030407] text-white">
       <Navbar />
 
-      <Hero />
+      <ScrollSection depth="deep">
+        <Hero />
+      </ScrollSection>
 
-      <MotionReveal>
+      <SectionBridge />
+
+      <ScrollSection depth="normal">
         <Skills />
-      </MotionReveal>
+      </ScrollSection>
 
-      <MotionReveal>
+      <SectionBridge />
+
+      <ScrollSection depth="deep">
         <Projects />
-      </MotionReveal>
+      </ScrollSection>
 
-      <MotionReveal>
+      <SectionBridge />
+
+      <ScrollSection depth="soft">
         <About />
-      </MotionReveal>
+      </ScrollSection>
 
-      <MotionReveal>
+      <SectionBridge />
+
+      <ScrollSection depth="normal">
         <Contact />
-      </MotionReveal>
+      </ScrollSection>
 
       <Footer />
     </main>
